@@ -1,0 +1,11 @@
+---
+# tasks file for role_notification_email
+- name: Set template file based on communication type
+  ansible.builtin.set_fact:
+    template_file: "{{ communication_type }}.html.j2"
+
+- name: Render email template
+  ansible.builtin.include_tasks: render_email.yml
+
+- name: Send notification emails to all recipients
+  ansible.builtin.include_tasks: send_email.yml

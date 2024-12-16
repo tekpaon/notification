@@ -1,0 +1,10 @@
+- name: Send notification email to each recipient
+  ansible.builtin.mail:
+    host: "{{ smtp_host }}"
+    port: "{{ smtp_port }}"
+    from: "{{ from_email }}"
+    to: "{{ item }}"
+    subject: "{{ email_subject }}"
+    body: "{{ lookup('ansible.builtin.file', '/tmp/email_notification.html') }}"
+    subtype: html
+  loop: "{{ automation_recipient_emails }}"

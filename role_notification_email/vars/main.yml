@@ -1,0 +1,14 @@
+---
+# vars file for role_notification_email
+# SMTP infos
+smtp_host: "mail.example.com"
+smtp_port: 25
+from_email: "group@example.com"
+
+# Generic user and subject
+client_name: "Ansible user"
+email_subject: "Notification"
+
+# ServiceNow links
+automation_request: "https://snow_url.com"
+automation_problem: "https://snow_url.com"

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>New Features Announcement</title>
+</head>
+<body>
+    <h2>Exciting New Features in Ansible Automation Platform</h2>
+    <p>We are thrilled to announce the release of new features in the Ansible Automation Platform:</p>
+    <ul>
+        {% for feature in new_features %}
+            <li><strong>{{ feature.name }}:</strong> {{ feature.description }}</li>
+        {% endfor %}
+    </ul>
+    <p>These features are designed to improve your experience and help you achieve more with our platform. For more information, please visit our <a href="{{ documentation_url }}">documentation</a>.</p>
+    <p>Best regards,<br>The Toad Automation Team</p>
+</body>
+</html>

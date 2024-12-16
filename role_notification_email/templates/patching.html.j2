@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Maintenance Notification</title>
+</head>
+<body>
+    <h2>Maintenance Notification - Ansible Automation Platform</h2>
+    <p>Dear {{ client_name }},</p>
+    <p>We would like to inform you of an upcoming <strong>{{communication_type}}</strong> operation:</p>
+    <ul>
+        <li><strong>Current version:</strong> {{ current_version }}</li>
+        <li><strong>Target version:</strong> {{ target_version }}</li>
+        <li><strong>Date:</strong> {{ maintenance_date }}</li>
+        <li><strong>Time-slot:</strong> {{ maintenance_time }}</li>
+    </ul>
+    <p>{{ additional_notes }}</p>
+    <p>For futher details, please refer to the ServiceNow change request: <strong>{{ snow_change_id }}</strong>.</p>
+    <p>If you have any questions, please contact our team or open a ServiceNow ticket.</p>
+    <ul>
+        <li><a href="{{ automation_request }}"> Automation Request </a></li>
+        <li><a href="{{ automation_problem }}"> Automation Problem </a></li>
+    </ul>
+    <p>Best regards,<br><br>Toad Automation Team</p>
+</body>
+</html>

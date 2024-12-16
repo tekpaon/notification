@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Decommissioning VMs</title>
+</head>
+<body>
+    <h2>RHEL VMs Decommissioning</h2>
+    <p>Dear monitoring teams,</p>
+    <p>Please note that;</p>
+    <ul>
+        {% for vm_name in vm_list %}
+          
+            <li><strong>{{ vm_name }}</strong> has been decommissioned.</li>
+        {% endfor %}
+    </ul>
+    <p>If you find any issues related to this operation please feel free to contact our team.</p>
+    <p>Best regards,<br><br>Toad Core infrastructure Team</p>
+</body>
+</html>

@@ -1,0 +1,5 @@
+- name: Render email template
+  ansible.builtin.template:
+    src: "{{ template_file }}"
+    dest: "/tmp/email_notification.html"
+    mode: 0640

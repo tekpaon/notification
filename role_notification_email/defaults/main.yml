@@ -1,0 +1,18 @@
+---
+# defaults file for role_notification_email
+communication_type: "patching" # Options: patching, follow_up, new_features, decom_vms
+recipient_emails: [] # List of recipient email addresses
+current_version: "2.3.4"
+target_version: "2.5.0"
+maintenance_date: "2024-12-12"
+maintenance_time: "08:00 - 12:00"
+additional_notes: "This update includes critical security patches."
+new_features: []
+documentation_url: "#"
+snow_change_id: "SCTASK126378"
+# vm_list:
+#   - host: llxspihep01.lx.finbel.intra
+#     ticket: "SCTASKXXX1"
+#   - host: llxspaond01.lx.finbel.intra
+#     ticket: "SCTASKXXX1"
+

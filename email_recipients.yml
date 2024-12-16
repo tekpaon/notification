@@ -1,0 +1,6 @@
+automation_recipient_emails:
+  - "paulus@example.com"
+
+decom_recipient_emails:
+  - "paulus@example.com"
+  - "pierros@example.com"

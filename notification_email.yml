@@ -1,0 +1,10 @@
+---
+- name: Send emails to Ansible Automation users via outlook
+  hosts: localhost
+  gather_facts: false
+
+  vars_files:
+    - email_recipients.yml
+
+  roles:
+    - role_notification_email
